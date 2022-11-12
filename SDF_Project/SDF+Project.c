@@ -97,7 +97,7 @@ int factorial(int a)
 
 double Nth_Root(double a, double b)
 {
-    return pow(a,b);
+    return pow(a,inverse(b));
 }
 
 double Pi(void)
