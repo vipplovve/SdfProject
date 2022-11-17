@@ -19,7 +19,7 @@ void intro(void)
 void menu(void)
 {
     printf("\nWhich Sub-Application would you like to use? \n\n");
-    printf("1.Calculator Cave.\n\n2.Problem Solver.\n\n3.Libirary of Resources.\n\n0.Exit\n");
+    printf("1.Calculator Cave.\n\n2.Problem Solver.\n\n3.Library of Resources.\n\n0.Exit\n");
 
 }
 
@@ -34,6 +34,39 @@ void probmenu(void)
 {
     printf("\n\nWhich Kind of Problem Solver Would You Like to Summon? ");
     printf("\n\n1.Mathematics Related.\n\n2.Physics Related.\n\n0.Back\n\n");
+    printf("Enter Your Choice: ");
+}
+
+void libmenu(void)
+{
+    printf("\n\nWhat kind of resources would you like to access? ");
+    printf("\n\n1.Academics Related.\n\n2.Recreational.\n\n3.Self-Improvement.\n\n0.Back\n\n");
+    printf("Enter Your Choice: ");
+}
+
+void academic(void)
+{
+    printf("\n\nList of Books available:- \n\n");
+    printf("1.Optics\n\n2.Let Us C\n\n");
+    printf("3.Linear Algebra\n\n4.Ordinary & Partial Differential Equations\n\n");
+    printf("0.Back\n\n");
+    printf("Enter Your Choice: ");
+}
+
+void recreational(void)
+{
+    printf("\n\nList of Books available:- \n\n");
+    printf("0.Back\n\n");
+    printf("Enter Your Choice: ");
+}
+
+void selfimp(void)
+{
+    printf("\n\nList of Books available:- \n\n");
+    printf("1.Rich Dad, Poor Dad\n\n2.Thinking, Slow and Fast\n\n");
+    printf("3.The Subtle Art of not Giving a F*ck\n\n4.Sun Tzu's Art of War\n\n");
+    printf("5.Atomic Habits\n\n6.Man's Search For Meaning\n\n");
+    printf("0.Back\n\n");
     printf("Enter Your Choice: ");
 }
 
@@ -940,6 +973,83 @@ int main()
 
             }
 
+            else if(choice==3)
+            {
+                int libchoice=1;
+                while(libchoice!=0)
+                {
+                    libmenu();
+                    scanf("%d",&libchoice);
+                    switch(libchoice)
+                    {
+                        case 1:
+                        {
+                            int academicchoice=1;
+                            while(academicchoice!=0)
+                            {
+                                academic();
+                                scanf("%d",&academicchoice);
+                                switch(academicchoice)
+                                {
+                                    case 1:
+                                    printf("\nhttps://drive.google.com/file/d/1gw-7l9z4JDAuZOBQXjQiiBIQlByS73Hp/view?usp=sharing");
+                                    break;
+                                    case 2:
+                                    printf("\nhttps://drive.google.com/file/d/1F0Agu8e0sI552SxpfysUZk8F4Pts6hyI/view?usp=sharing");
+                                    break;
+                                    case 3:
+                                    printf("\nhttps://drive.google.com/file/d/16gLvTnY2pseQfsERFZ5ybAsyeX4-58Ll/view?usp=sharing");
+                                    break;
+                                    case 4:
+                                    printf("\nhttps://drive.google.com/file/d/1MuXC5GQ6ril3EupgNcA9-8XnnhSlyxrZ/view?usp=sharing");
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+
+                        case 2:
+                        {
+                            break;
+                        }
+
+                        case 3:
+                        {
+                            int selfchoice=1;
+                            while(selfchoice!=0)
+                            {
+                                selfimp();
+                                scanf("%d",&selfchoice);
+                                switch(selfchoice)
+                                {
+                                    case 1:
+                                    printf("\nhttps://drive.google.com/file/d/10sipZMSqVLIHVrqoHAenMa_Sd8LRg63_/view?usp=sharing");
+                                    break;
+                                    case 2:
+                                    printf("\nhttps://drive.google.com/file/d/1X_xeieI_KUJZOAoaazrAO3cgG0dIzNTt/view?usp=sharing");
+                                    break;
+                                    case 3:
+                                    printf("\nhttps://drive.google.com/file/d/1DFVarrP3PD4ED8XysxKxFKMz-W_TUJYj/view?usp=sharing");
+                                    break;
+                                    case 4:
+                                    printf("\nhttps://drive.google.com/file/d/1_KO-mpK5kbA2iNXdcdF6oDXBXHneXTZ_/view?usp=sharing");
+                                    break;
+                                    case 5:
+                                    printf("\nhttps://drive.google.com/file/d/13_QRDibCftYDZ8zyg11db24g89ecqR83/view?usp=sharing");
+                                    break;
+                                    case 6:
+                                    printf("\nhttps://drive.google.com/file/d/1sDw4n4ifdGhBRe3pIpMHOqtU8HPXK3v7/view?usp=sharing");
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+                
+
+
+            }
             else if(choice==0)
             {
                 printf("\nThanks For Using Our Application !!\n\n");

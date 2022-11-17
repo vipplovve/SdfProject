@@ -1,6 +1,0 @@
-i have designed and coded the complete application framework along with the calculator sub applications.
-
-fork the file and try doing the other two sub-applications or help via providing creative ideas for designing them.
-
-peace:)
-(also, please koi synopsis design + type krdo lmao, and send a copy to me for confirmation).
