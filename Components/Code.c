@@ -40,7 +40,7 @@ void probmenu(void)
 void libmenu(void)
 {
     printf("\n\nWhat kind of resources would you like to access? ");
-    printf("\n\n1.Academics Related.\n\n2.Recreational.\n\n3.Self-Improvement.\n\n0.Back\n\n");
+    printf("\n\n1.Academics Related Books.\n\n2.Music Playlists.\n\n3.Self-Improvement Books.\n\n0.Back\n\n");
     printf("Enter Your Choice: ");
 }
 
@@ -53,9 +53,13 @@ void academic(void)
     printf("Enter Your Choice: ");
 }
 
-void recreational(void)
+void music(void)
 {
-    printf("\n\nList of Books available:- \n\n");
+    printf("\n\nAvailable Playlists:- \n\n");
+    printf("1.jet black.\n\n");
+    printf("2.neon purple.\n\n");
+    printf("3.sounds. from. the nether. & eden.\n\n");
+    printf("4.hiphop mix\n\n");
     printf("0.Back\n\n");
     printf("Enter Your Choice: ");
 }
@@ -1010,6 +1014,27 @@ int main()
 
                         case 2:
                         {
+                            int musicchoice=1;
+                            while(musicchoice!=0)
+                            {
+                                music();
+                                scanf("%d",&musicchoice);
+                                switch(musicchoice)
+                                {
+                                    case 1:
+                                    printf("\nhttps://open.spotify.com/playlist/2A5EY72mw8MdwKtSEf7Hvt?si=9048f10fd705407d");
+                                    break;
+                                    case 2:
+                                    printf("\nhttps://open.spotify.com/playlist/2GlDNYgC0UQ05crcQH2OEp?si=589d28f69c1c4388");
+                                    break;
+                                    case 3:
+                                    printf("\nhttps://open.spotify.com/playlist/57iPlqzuRosjdBVKUgheWx?si=e3e6f23789104173");
+                                    break;
+                                    case 4:
+                                    printf("\nhttps://open.spotify.com/playlist/37i9dQZF1EQnqst5TRi17F?si=e47e875fe8b243d9");
+                                    break;
+                                }
+                            }
                             break;
                         }
 
